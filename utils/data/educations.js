@@ -2,7 +2,7 @@ export const educations = [
   {
     id: 1,
     title: "Bachiller",
-    duration: "2024 - Culinado",
+    duration: "2024 - Culminado",
     institution: "Colegio Kennedy IED",
   },
   {
