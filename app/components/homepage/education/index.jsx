@@ -18,7 +18,7 @@ function Education() {
       />
       <div className="flex justify-center -translate-y-[1px]">
         <div className="w-3/4">
-          <div className="h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent  w-full" />
+          <div className="h-[1px] bg-gradient-to-r from-transparent via-red-800 to-transparent  w-full" />
         </div>
       </div>
 
@@ -26,7 +26,7 @@ function Education() {
         <div className="flex  items-center">
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
           <span className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
-            Educations
+            Educación
           </span>
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
         </div>
@@ -54,12 +54,12 @@ function Education() {
                         className="absolute bottom-0 opacity-80"
                       />
                       <div className="flex justify-center">
-                        <p className="text-xs sm:text-sm text-[#16f2b3]">
+                        <p className="text-xs sm:text-sm text-red-400">
                           {education.duration}
                         </p>
                       </div>
                       <div className="flex items-center gap-x-8 px-3 py-5">
-                        <div className="text-violet-500  transition-all duration-300 hover:scale-125">
+                        <div className="text-red-600  transition-all duration-300 hover:scale-125">
                           <BsPersonWorkspace size={36} />
                         </div>
                         <div>

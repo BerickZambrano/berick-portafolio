@@ -22,7 +22,7 @@ function Experience() {
         <div className="flex  items-center">
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
           <span className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
-            Experiences
+            Experiencia
           </span>
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
         </div>
@@ -50,12 +50,12 @@ function Experience() {
                         className="absolute bottom-0 opacity-80"
                       />
                       <div className="flex justify-center">
-                        <p className="text-xs sm:text-sm text-[#16f2b3]">
+                        <p className="text-xs sm:text-sm text-red-400">
                           {experience.duration}
                         </p>
                       </div>
                       <div className="flex items-center gap-x-8 px-3 py-5">
-                        <div className="text-violet-500  transition-all duration-300 hover:scale-125">
+                        <div className="text-red-600  transition-all duration-300 hover:scale-125">
                           <BsPersonWorkspace size={36} />
                         </div>
                         <div>
