@@ -1,7 +1,7 @@
 export const experiences = [
   {
     id: 1,
-    title: 'Desarrallador (Practicas Tecnico)',
+    title: 'Desarrollador (Prácticas Tecnico)',
     company: "Granos y Cereales el Paisa",
     duration: "(Ene 2022 - Nov 2024)"
   },

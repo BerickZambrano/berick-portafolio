@@ -28,7 +28,7 @@ function BlogCard({ blog }) {
             {blog.title}
           </p>
         </Link>
-        <p className='text-sm lg:text-base text-[#d3d8e8] pb-3'>
+        <p className='text-sm lg:text-base text-[#d3d8e8] pb-3 h-24 lg:h-32 overflow-y-auto custom-scrollbar'>
           {blog.description}
         </p>
         {blog.tools && (
