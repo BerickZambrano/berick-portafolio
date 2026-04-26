@@ -2,6 +2,7 @@
 
 import * as React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 function ProjectCard({ project }) {
 
@@ -22,8 +23,8 @@ function ProjectCard({ project }) {
         </p>
       </div>
       {/* Diploma Area */}
-      <div className="px-4 lg:px-8 py-4 lg:py-8 flex justify-center border-t-[2px] border-[#4a0000a0]">
-        <div className="w-full h-48 lg:h-64 border-2 border-dashed border-[#4a0000a0] rounded-lg flex flex-col items-center justify-center bg-[#1a000050] hover:bg-[#2a000050] transition-colors cursor-pointer group relative overflow-hidden">
+      <div className="px-4 lg:px-8 py-4 lg:py-8 flex flex-col items-center border-t-[2px] border-[#4a0000a0]">
+        <div className="w-full h-48 lg:h-64 border-2 border-dashed border-[#4a0000a0] rounded-lg flex flex-col items-center justify-center bg-[#1a000050] hover:bg-[#2a000050] transition-colors cursor-pointer group relative overflow-hidden mb-4">
           {project.image ? (
              <Image 
                src={project.image} 
@@ -32,6 +33,12 @@ function ProjectCard({ project }) {
                objectFit="cover"
                className="rounded-lg"
              />
+          ) : project.demo && project.demo.endsWith('.pdf') ? (
+            <iframe 
+              src={`${project.demo}#toolbar=0&navpanes=0&scrollbar=0`} 
+              className="w-full h-full pointer-events-none"
+              title={project.name}
+            />
           ) : (
             <>
               <div className="text-red-500 mb-2 group-hover:scale-110 transition-transform">
@@ -44,6 +51,16 @@ function ProjectCard({ project }) {
             </>
           )}
         </div>
+
+        {project.demo && (
+          <Link 
+            href={project.demo} 
+            target="_blank"
+            className="flex items-center gap-2 rounded-full bg-gradient-to-r from-red-900 to-black px-6 py-2 text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:scale-105 active:scale-95"
+          >
+            Ver Certificado
+          </Link>
+        )}
       </div>
     </div>
   );
