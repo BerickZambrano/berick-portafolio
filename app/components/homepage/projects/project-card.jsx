@@ -21,55 +21,8 @@ function ProjectCard({ project }) {
           {project.name}
         </p>
       </div>
-      <div className="overflow-hidden border-t-[2px] border-[#4a0000a0] px-4 lg:px-8 py-4 lg:py-8">
-        <code className="font-mono text-xs md:text-sm lg:text-base">
-          <div className="blink">
-            <span className="mr-2 text-red-500">const</span>
-            <span className="mr-2 text-white">project</span>
-            <span className="mr-2 text-red-500">=</span>
-            <span className="text-gray-400">{'{'}</span>
-          </div>
-          <div>
-            <span className="ml-4 lg:ml-8 mr-2 text-white">name:</span>
-            <span className="text-gray-400">{`'`}</span>
-            <span className="text-amber-300">{project.name}</span>
-            <span className="text-gray-400">{`',`}</span>
-          </div>
-
-          <div className="ml-4 lg:ml-8 mr-2">
-            <span className=" text-white">tools:</span>
-            <span className="text-gray-400">{` ['`}</span>
-            {
-              project.tools.map((tag, i) => (
-                <React.Fragment key={i}>
-                  <span className="text-amber-300">{tag}</span>
-                  {
-                    project.tools?.length - 1 !== i &&
-                    <span className="text-gray-400">{`', '`}</span>
-                  }
-                </React.Fragment>
-              ))
-            }
-            <span className="text-gray-400">{"],"}</span>
-          </div>
-          <div>
-            <span className="ml-4 lg:ml-8 mr-2 text-white">myRole:</span>
-            <span className="text-orange-400">{project.role}</span>
-            <span className="text-gray-400">,</span>
-          </div>
-          {project.description && (
-            <div className="ml-4 lg:ml-8 mr-2">
-              <span className="text-white">Description:</span>
-              <span className="text-cyan-400">{' ' + project.description}</span>
-              <span className="text-gray-400">,</span>
-            </div>
-          )}
-          <div><span className="text-gray-400">{`};`}</span></div>
-        </code>
-      </div>
-      
       {/* Diploma Area */}
-      <div className="px-4 lg:px-8 pb-4 lg:pb-8 flex justify-center">
+      <div className="px-4 lg:px-8 py-4 lg:py-8 flex justify-center border-t-[2px] border-[#4a0000a0]">
         <div className="w-full h-48 lg:h-64 border-2 border-dashed border-[#4a0000a0] rounded-lg flex flex-col items-center justify-center bg-[#1a000050] hover:bg-[#2a000050] transition-colors cursor-pointer group relative overflow-hidden">
           {project.image ? (
              <Image 
