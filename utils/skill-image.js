@@ -82,6 +82,13 @@ import kubernetes from '../app/assets/svg/skills/kubernetes.svg'
 import linux from '../app/assets/svg/skills/linux.svg'
 import sqlalchemy from '../app/assets/svg/skills/sqlalchemy.svg'
 import fastapi from '../app/assets/svg/skills/fastapi.svg'
+import antigravity from '../app/assets/svg/skills/antigravity-color.svg';
+import claudecode from '../app/assets/svg/skills/claudecode-color.svg';
+import ia from '../app/assets/svg/skills/ia.svg';
+import laravel from '../app/assets/svg/skills/60px-Laravel.svg.png';
+import supabase from '../app/assets/svg/skills/supabase.svg';
+import xampp from '../app/assets/svg/skills/xampp_94513.svg';
+import vscode from '../app/assets/svg/skills/Visual_Studio_Code_0.10.1_icon.png';
 
 
 
@@ -255,6 +262,20 @@ export const skillsImage = (skill) => {
       return sqlalchemy;
     case 'fastapi':
       return fastapi;
+    case 'antigravity':
+      return antigravity;
+    case 'claude code':
+      return claudecode;
+    case 'ia':
+      return ia;
+    case 'laravel':
+      return laravel;
+    case 'supabase':
+      return supabase;
+    case 'xampp':
+      return xampp;
+    case 'visual studio code':
+      return vscode;
     default:
       break;
   }
