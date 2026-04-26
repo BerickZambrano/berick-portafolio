@@ -16,7 +16,7 @@ export const skillsData = [
   'Supabase',
   'PHP',
   'Xampp',
-  'GitHub',
+  'Git',
   'Visual Studio Code',
   'Antigravity',
   'Claude Code',

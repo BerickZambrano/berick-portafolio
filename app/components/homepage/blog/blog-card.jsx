@@ -28,9 +28,21 @@ function BlogCard({ blog }) {
             {blog.title}
           </p>
         </Link>
-        <p className='text-sm lg:text-base text-[#d3d8e8] pb-3 lg:pb-6 line-clamp-3'>
+        <p className='text-sm lg:text-base text-[#d3d8e8] pb-3 line-clamp-3'>
           {blog.description}
         </p>
+        {blog.tools && (
+          <div className="flex flex-wrap gap-2 mt-2 pb-3">
+            {blog.tools.map((tool, index) => (
+              <span 
+                key={index} 
+                className="bg-red-950/50 border border-red-800 text-red-200 text-[10px] lg:text-xs px-2 py-1 rounded-md"
+              >
+                {tool}
+              </span>
+            ))}
+          </div>
+        )}
         {/* <div className="">
           <Link target='_blank' href={blog.url}>
             <button className='bg-violet-500 text-white px-3 py-1.5 rounded-full text-xs'>
