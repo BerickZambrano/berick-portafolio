@@ -95,9 +95,17 @@ export async function POST(request) {
       }, { status: 200 });
     }
 
+    // Diagnostic information
+    let errorMessage = 'Error al enviar el mensaje. ';
+    if (!process.env.EMAIL_ADDRESS || !process.env.GMAIL_PASSKEY) {
+      errorMessage += 'Faltan las credenciales de Gmail en las variables de entorno. ';
+    } else {
+      errorMessage += 'Hubo un problema con el servidor de correo. ';
+    }
+
     return NextResponse.json({
       success: false,
-      message: 'Error al enviar el mensaje. Inténtalo de nuevo.',
+      message: errorMessage,
     }, { status: 500 });
   } catch (error) {
     console.error('API Error:', error.message);
