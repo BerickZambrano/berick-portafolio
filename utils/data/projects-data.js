@@ -1,7 +1,7 @@
 export const projectsData = [
     {
         id: 1,
-        name: 'Certificado de Desarrollador',
+        name: 'Certificado de Desarrollo con IA',
         description: "",
         tools: ['Express', 'MongoDB', 'OpenAI API', 'AWS SES', 'AWS S3', 'Node Mailer', 'Joi', 'Puppeteer', 'EC2', 'PM2', 'Nginx'],
         role: 'Desarrollador Backend',
@@ -21,7 +21,7 @@ export const projectsData = [
     },
     {
         id: 3,
-        name: 'Certificado Cisco - Python',
+        name: 'Certificado Cisco - Python I',
         description: '',
         tools: ['React', 'Bootstrap', 'SCSS', 'Stripe', 'Express', 'TypeScript', 'MongoDB', 'Azure Blob', 'OpenAI API', 'Replicate AI', 'Cronjob', 'JWT'],
         code: '',
@@ -31,7 +31,7 @@ export const projectsData = [
     },
     {
         id: 4,
-        name: 'Certificado Profesional',
+        name: 'Certificado Cisco - Python II',
         description: '',
         tools: ['NextJS', 'Material UI', 'Redux', 'Sun Editor', "Calendar"],
         code: '',
